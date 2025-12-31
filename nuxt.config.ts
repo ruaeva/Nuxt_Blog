@@ -1,6 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
-    modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/hints','@pinia/nuxt',],
+    modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/hints','@pinia/nuxt','@element-plus/nuxt'],
     // 是否开启服务端渲染 默认开启
     ssr: true,
     vite: {
