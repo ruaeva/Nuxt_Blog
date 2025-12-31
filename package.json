@@ -1,0 +1,24 @@
+{
+  "name": "my-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.10.0",
+    "@nuxt/eslint": "1.12.1",
+    "@nuxt/hints": "1.0.0-alpha.5",
+    "@pinia/nuxt": "^0.11.3",
+    "@tailwindcss/vite": "^4.1.18",
+    "better-sqlite3": "^12.5.0",
+    "eslint": "^9.0.0",
+    "nuxt": "^4.2.2",
+    "pinia": "^3.0.4",
+    "tailwindcss": "^4.1.18"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
