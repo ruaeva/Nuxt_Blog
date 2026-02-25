@@ -1,11 +1,12 @@
 import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
     modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/hints','@pinia/nuxt','@element-plus/nuxt'],
     // 是否开启服务端渲染 默认开启
     ssr: true,
     vite: {
         plugins: [
-            tailwindcss()
+            tailwindcss(),
         ]
     },
     // 全局CSS样式
@@ -18,9 +19,7 @@ export default defineNuxtConfig({
                 {name: 'description', content: 'test'}
             ],
             link: [
-                {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-                {rel: 'preload', href: '/style/main.css', as: 'style'},
-                {rel: 'stylesheet', href: '/style/main.css'}
+                {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
             ]
         }
     },

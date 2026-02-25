@@ -1,9 +1,24 @@
 <template>
-<!--  <NuxtRouteAnnouncer />-->
-  <Navbar />
-  <NuxtPage />
+  
+    <DefaultLayout>
+      <template #header>
+        <Navbar />
+      </template>
+
+      <template #sidebar>
+        <SiderBar />
+      </template>
+
+  
+
+      <template #main>
+        <NuxtPage />
+      </template>
+    </DefaultLayout>
+  
 </template>
 
 <script setup lang="ts">
-import Navbar from "~/components/widget/Navbar.vue";
+import DefaultLayout from "./layout/DefaultLayout.vue";
+
 </script>

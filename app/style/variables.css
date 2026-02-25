@@ -1,0 +1,14 @@
+@theme {
+    /* color */
+    --bg-color: oklch(0.99 0 0);
+    --bg-color-dark: oklch(0.422 0.038 113.834);
+
+    /* font */
+    --font-family-base: 'ChironGoRoundTC-400R';
+
+
+}
+
+:root {
+    --radius-large :1.5rem;
+}

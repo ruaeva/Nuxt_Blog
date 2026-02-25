@@ -1,29 +1,74 @@
 @import "tailwindcss";
+@import "../style/variables.css";
 
-@theme {
 
+@font-face {
+    font-family: 'ChironGoRoundTC-400R';
+    src: url('../assets/fonts/ChironGoRoundTC-400R.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    font-family: var(--font-family-base), serif;
+
 }
 
 body {
+    margin: 0;
+    padding: 0;
     height: 100vh;
     width: 100vw;
-    overflow: auto;
+    overflow-x: hidden;
+    
 }
 
 
 li {
-    list-style: none;
-    cursor: pointer;
+    /* list-style: none;
+    cursor: pointer; */
+    font-size: 0.85rem;
+    margin-bottom: calc(var(--spacing) * 2);
+    @media(min-width: 768px) {
+        font-size: 1rem;
+        
+    }
 }
 
+.card-base {
+    @apply rounded-[var(--radius-large)] overflow-hidden  transition-colors duration-150;
+
+}
+
+.card-base:hover {
+    @apply bg-[var(--bg-color-dark)];
+}
+
+.card-content {
+    @apply w-full h-auto overflow-hidden bg-blue-300/30 backdrop-blur-xl  rounded-2xl px-4 py-2 md:px-8 md:py-4;
+}
+
+.text-content {
+    @apply text-[0.85rem] md:text-lg text-gray-900 dark:text-gray-300;
+}
+
+
+.before-border-l {
+    @apply before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:bg-[var(--bg-color)] before:rounded-xl md:before:-ml-3 before:-ml-2 ;
+}
+
+.title-base {
+    @apply text-2xl font-bold text-[var(--bg-color)] md:text-3xl mb-2 md:m-4; 
+}
+
+.title-sub {
+    @apply text-xl font-semibold text-[var(--bg-color)] md:text-2xl mt-2 md:mt-8 md:mb-2;
+}

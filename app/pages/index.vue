@@ -1,11 +1,11 @@
 <template>
-  <div >
+  <div class="">
+    <!--    <div class="bg-red-500 h-900  w-full">111</div>-->
+    <text class="">Hello world!</text>
 
-    <text class="text-3xl font-bold">Hello world!</text>
-    <PostContent path="/posts/my-article"/>
   </div>
 </template>
 
 <script setup lang="ts">
-import PostContent from "~/components/PostContent.vue";
+
 </script>
