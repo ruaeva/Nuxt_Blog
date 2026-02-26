@@ -15,6 +15,7 @@
         <NuxtPage />
       </template>
     </DefaultLayout>
+    <Analytics />
   
     <Analytics />
   
@@ -23,5 +24,6 @@
 <script setup lang="ts">
 import { Analytics } from '@vercel/analytics/nuxt';
 import DefaultLayout from "./layout/DefaultLayout.vue";
+import { Analytics } from '@vercel/analytics/nuxt';
 
 </script>
