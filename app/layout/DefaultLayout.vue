@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 <template>
   <!-- 桌面端布局 -->
   <div
-    class="desktop-layout bg-cover  bg-[url('https://pic1.zhimg.com/v2-0d4991698b20a6fe90aaab2c441f5655_r.jpg?source=12a79843')]"
+    class="desktop-layout bg-cover  bg-[url('https://7tlpfu4y7t0osxeb.private.blob.vercel-storage.com/0000.jpg')]"
   >
     <SpeedInsights />
     <div class="header">
