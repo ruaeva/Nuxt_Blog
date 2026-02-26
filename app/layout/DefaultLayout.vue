@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Footer from "~/components/FooterComponent.vue";
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 </script>
 
 <template>
@@ -7,6 +8,7 @@ import Footer from "~/components/FooterComponent.vue";
   <div
     class="desktop-layout bg-cover  bg-[url('https://pic1.zhimg.com/v2-0d4991698b20a6fe90aaab2c441f5655_r.jpg?source=12a79843')]"
   >
+    <SpeedInsights />
     <div class="header">
       <slot name="header" />
     </div>
