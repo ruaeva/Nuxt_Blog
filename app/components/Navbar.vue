@@ -111,7 +111,7 @@ onUnmounted(() => {
     :class="{ '-translate-y-full': !isNavbarVisible }"
   >
     <nav
-      class="flex items-center justify-between overflow-hidden bg-blue-100/30 backdrop-blur-xl mt-4 mb-2 py-2 px-4 bg-navbar rounded-2xl shadow-lg gap-4 md:gap-20 w-full max-w-7xl"
+      class="flex items-center justify-between overflow-hidden border-2 border-gray-50/30 bg-blue-100/30 backdrop-blur-xl mt-4 mb-2 py-2 px-4 bg-navbar rounded-2xl shadow-lg gap-4 md:gap-20 w-full max-w-7xl"
     >
       <!-- Logo -->
       <div class="logo flex-shrink-0">

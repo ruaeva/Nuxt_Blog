@@ -34,10 +34,10 @@ const avatarAltText = computed(() => {
 
 <template>
 
-  <div class="card-base flex flex-col items-center justify-center  bg-amber-100 p-2 m-2">
+  <div class="card-base flex flex-col items-center justify-center  bg-amber-100 p-3">
     <nuxt-link
         aria-label="Go to About Page"
-        class="avatar-img  relative rounded-3xl group  overflow-hidden transform transition-all active:scale-95 "
+        class="avatar-img  relative rounded-3xl group  overflow-hidden transform transition-all active:scale-98 "
         to="/about">
       <div
           class="absolute w-full h-full overflow-hidden   hover:bg-black/10  transform  transition-colors flex justify-center items-center ">
@@ -45,7 +45,7 @@ const avatarAltText = computed(() => {
             class="transition opacity-0 scale-90 group-hover:scale-100 group-hover:opacity-100 text-white h-24 w-24"
             icon="tabler:address-book" />
       </div>
-      <img class="max-w-[12rem] " :src="safaAvatarUrl" :alt="avatarAltText">
+      <img class="w-full  " :src="safaAvatarUrl" :alt="avatarAltText">
     </nuxt-link>
     <div class="author">
       <div class="font-bold text-xl text-center mt-2 mb-1 dark:text-neutral-50 transition  ">{{

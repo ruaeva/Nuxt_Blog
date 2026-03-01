@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <!--    <div class="bg-red-500 h-900  w-full">111</div>-->
+       <div class="bg-red-500 h-900 w-full max-w-full">111</div>
     <text class="">Hello world!</text>
 
   </div>

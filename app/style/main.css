@@ -17,8 +17,8 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    font-family: var(--font-family-base), serif;
+    scroll-behavior: smooth; /* smooth scrolling */
+    
 
 }
 
@@ -26,9 +26,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    
+    width: 100%; 
+    font-family: var(--font-family-base), serif;
 }
 
 
@@ -44,16 +43,14 @@ li {
 }
 
 .card-base {
-    @apply rounded-[var(--radius-large)] overflow-hidden  transition-colors duration-150;
+    @apply w-full h-auto rounded-[var(--radius-large)] overflow-hidden  transition-colors duration-150;
 
 }
 
-.card-base:hover {
-    @apply bg-[var(--bg-color-dark)];
-}
 
 .card-content {
-    @apply w-full h-auto overflow-hidden bg-blue-300/30 backdrop-blur-xl  rounded-2xl px-4 py-2 md:px-8 md:py-4;
+    
+    @apply w-full h-auto overflow-hidden border-2 border-gray-50/30 bg-blue-300/30 backdrop-blur-xl  rounded-[var(--radius-large)] px-4 py-2 md:px-8 md:py-4;
 }
 
 .text-content {
