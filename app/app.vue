@@ -1,32 +1,11 @@
 <template>
-  
-    <DefaultLayout>
-      <template #header>
-        <Navbar />
-      </template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 
-      <template #sidebar>
-        <SiderBar />
-      </template>
-
-  
-
-      <template #main>
-        <NuxtPage />
-      </template>
-    </DefaultLayout>
-
-    
-    <Analytics />
-
-  
+  <Analytics />
 </template>
 
 <script setup lang="ts">
-import DefaultLayout from "./layout/DefaultLayout.vue";
-import { Analytics } from '@vercel/analytics/nuxt';
-
-
-
-
+import { Analytics } from "@vercel/analytics/nuxt";
 </script>

@@ -31,7 +31,7 @@ const announcements = [
 </script>
 
 <template>
-<div class="card-base p-4 m-2 bg-blue-50">
+<div class="card-base p-4 bg-blue-50">
   <div class="">
     <div class="flex items-center  gap-2">
       <Icon height="30" icon="uil:calendar" width="30"/>

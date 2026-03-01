@@ -6,7 +6,7 @@ import Tags from "~/components/widget/Tags.vue";
 </script>
 
 <template>
-  <div class="  max-w-[18rem]">
+  <div class="flex flex-col gap-2 md:gap-4"> 
     <Profile/>
     <Announcement/>
     <Categories/>

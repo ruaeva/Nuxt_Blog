@@ -23,6 +23,7 @@ export default defineNuxtConfig({
             ]
         }
     },
+    loading:'@/components/Loading.vue',
     // 内容配置
     content: {},
     // 服务端运行端口

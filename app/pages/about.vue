@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <scrollView />
+    <!-- <scrollView /> -->
       
  
 
@@ -25,7 +25,7 @@
       <h1 class="title-base font-bold before-border-l relative">
         我的简历
       </h1>
-      <div class=" sm:overflow-x-auto  border-gray-100">
+      <div class=" overflow-x-auto  border-gray-100">
         <table class="border-collapse border-2 border-gray-100 ...">
           <tr>
             <th class="border-2 border-gray-300 py-2 px-4">学校</th>
