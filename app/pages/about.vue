@@ -1,5 +1,29 @@
 <script setup lang="ts">
   import ScrollView from '~/components/widget/ScrollView.vue';
+
+
+  const tableData = [
+    {
+      date: '2016-05-02',
+      name: '王小虎',
+      address: '上海市普陀区金沙江路 1518 弄'
+    },
+    {
+      date: '2016-05-04',
+      name: '王小虎',
+      address: '上海市普陀区金沙江路 1517 弄'
+    },
+    {
+      date: '2016-05-01',
+      name: '王小虎',
+      address: '上海市普陀区金沙江路 1519 弄'
+    },
+    {
+      date: '2016-05-03',
+      name: '王小虎',
+      address: '上海市普陀区金沙江路 1516 弄'
+    }
+  ]
 </script>
 
 <template>
@@ -25,7 +49,7 @@
       <h1 class="title-base font-bold before-border-l relative">
         我的简历
       </h1>
-      <div class=" overflow-x-auto  border-gray-100">
+      <!-- <div class=" overflow-x-auto  border-gray-100">
         <table class="border-collapse border-2 border-gray-100 ...">
           <tr>
             <th class="border-2 border-gray-300 py-2 px-4">学校</th>
@@ -59,8 +83,17 @@
             <th class="border-2 border-gray-300 py-2 px-4">-----------</th>
           </tr>
         </table>
-      </div>
+      </div> -->
 
+   <el-table :data="tableData" style="width: 100%">
+    <el-table-column prop="date"  width="180" />
+    <el-table-column prop="name"  width="180" />
+    <el-table-column prop="address"  />
+    <el-table-column prop="address"  />
+  </el-table>
+ 
+
+     
       
       <div class="">
         <!--  

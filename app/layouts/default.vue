@@ -12,12 +12,12 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt";
       <Navbar />
     </div>
     <div
-      class="main p-2 xl:mx-auto md:p-4 grid  md:grid-cols-[280px_1fr] xl:grid-cols-[260px_1fr_260px] gap-4  md:mx-auto"
+      class="main p-2  flex  gap-4  md:mx-auto"
     >
-      <div class="left-side hidden md:block">
+      <div class="left-side hidden md:block  min-w-[260px]">
         <SiderBar />
       </div>
-      <div class="content w-[860px] ">
+      <div class="content ">
         <slot />
 
         <div class="footer">
