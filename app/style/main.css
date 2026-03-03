@@ -25,7 +25,7 @@ html {
 @layer base { 
     @apply dark:bg-[var(--bg-color-dark)];
     @apply text-gray-900 dark:text-gray-300;
-    @apply dark:text-gray-300;
+    
 }
 
 

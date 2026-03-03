@@ -9,7 +9,13 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt";
   <div
     class="desktop-layout flex justify-center bg-[url('https://th.bing.com/th/id/OIP.c9AMmJ5wSjV2oVwBTbQBtQHaEK?w=326&h=183&c=7&r=0&o=7&pid=1.7&rm=3')]"
   >
-    <div class=" @container w-full min-h-screen xl:mx-40 lg:mx-4 mx-2">
+    <div class="max-w-360 w-full min-h-screen lg:mx-4 mx-2">
+      <!-- <div class='size-100 bg-amber-100 m-2'></div>
+      <div class='size-100 bg-amber-100 m-2'></div>
+      <div class='size-100 bg-amber-100 m-2'></div>
+      <div class='size-100 bg-amber-100 m-2'></div>
+      <div class='size-100 bg-amber-100 m-2'></div> -->
+
       <div class="header w-full">
         <Navbar />
       </div>
@@ -21,7 +27,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt";
         <div class="left-side hidden md:block">
           <SiderBar />
         </div>
-        <div class="content w-full  transform transition-all duration-300">
+        <div class="content w-full transform transition-all duration-300">
           <slot />
           <div class="footer mt-4">
             <Footer />

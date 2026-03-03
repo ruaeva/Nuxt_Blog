@@ -4,15 +4,15 @@
   >
     <Icon
       icon="lucide:globe-x"
-      class="absolute left-4 top-4 text-4xl "
+      class="absolute left-4 top-4 text-4xl text-gray-900/0"
     />
     <Icon
       icon="lucide:screen-share-off"
-      class="absolute right-4 bottom-4 text-4xl "
+      class="absolute right-4 bottom-4 text-4xl text-gray-900/40"
     />
     <Icon
       icon="mdi:alert-circle-outline"
-      class="absolute size-60 xl:size-120 text-gray-900/20 mb-2 z-"
+      class="absolute size-80 md:size-100 xl:size-120 text-gray-900/20 mb-2 z-"
     />
 
     <div class="flex flex-col items-center justify-center z-50">
