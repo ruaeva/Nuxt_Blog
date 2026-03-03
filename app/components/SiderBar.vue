@@ -6,7 +6,7 @@ import Tags from "~/components/widget/Tags.vue";
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 md:gap-4"> 
+  <div class="flex flex-col lg:gap-4 gap-2 w-auto" > 
     <Profile/>
     <Announcement/>
     <Categories/>
@@ -17,6 +17,3 @@ import Tags from "~/components/widget/Tags.vue";
 
 </template>
 
-<style scoped>
-
-</style>

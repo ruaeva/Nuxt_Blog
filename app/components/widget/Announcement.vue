@@ -38,7 +38,7 @@ const announcements = [
       <text class="text-xl font-bold">公告栏</text>
     </div>
 
-    <div class=" max-h-[8rem] overflow-y-auto scrollbar-hide">
+    <div v-if="announcements && announcements.length > 0" class=" max-h-[8rem] overflow-y-auto scrollbar-hide">
       <div
           v-for="announcement in announcements"
           :key="announcement.id"
@@ -56,6 +56,9 @@ const announcements = [
         </div>
 
       </div>
+    </div>
+    <div v-else class="py-4 text-center text-gray-500">
+      暂无公告
     </div>
   </div>
 </div>

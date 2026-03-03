@@ -1,10 +1,14 @@
 @theme {
     /* color */
-    --bg-color: oklch(0.99 0 0);
+    --bg-color: oklch(0.3 0 0);
     --bg-color-dark: oklch(0.422 0.038 113.834);
 
     /* font */
     --font-family-base: 'ChironGoRoundTC-400R';
+
+    --text-color:  oklch(0.967 0.001 286.375);
+    --text-color-dark:  oklch(0.274 0.006 286.033);
+    
 
 
 }
@@ -12,3 +16,5 @@
 :root {
     --radius-large :1.5rem;
 }
+
+

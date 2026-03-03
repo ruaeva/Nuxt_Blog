@@ -1,55 +1,39 @@
-<script setup lang="ts">
-import { ref } from "vue";
-import { useRoute, navigateTo } from "#app";
+<template>
+  <div
+    class="card-content min-h-full min-w-full flex flex-col items-center justify-center"
+  >
+    <Icon
+      icon="lucide:globe-x"
+      class="absolute left-4 top-4 text-4xl "
+    />
+    <Icon
+      icon="lucide:screen-share-off"
+      class="absolute right-4 bottom-4 text-4xl "
+    />
+    <Icon
+      icon="mdi:alert-circle-outline"
+      class="absolute size-60 xl:size-120 text-gray-900/20 mb-2 z-"
+    />
 
-// 定义 page 类型
-interface PageData {
-  title?: string;
-  content?: string;
-  [key: string]: any;
-}
+    <div class="flex flex-col items-center justify-center z-50">
+      <h1 class="font-blod md:text-9xl text-7xl mb-2">404</h1>
+      <p class="font-blod md:text-4xl text-2xl mb-2">页面不存在</p>
+      <p class="md:text-2xl text-md mb-4">
+        抱歉，您尝试访问的页面不存在或已被移动
+      </p>
+      <NuxtLink
+        class="font-blod md:text-xl p-2 rounded-xl bg-blue-100/50 backdrop-blur-xl hover:bg-gray-50 transform transition-all hover:scale-95 hover:text-gray-700"
+        to="/"
+        >返回首页</NuxtLink
+      >
+    </div>
+  </div>
+</template>
 
-const route = useRoute();
-const page = ref<PageData | null>(null);
-const loading = ref(true);
-const error = ref<string | null>(null);
-
-// 路径合法性校验函数
-const isValidPath = (path: string): boolean => {
-  // 简单校验路径是否合法（可根据实际需求扩展）
-  return /^\/[\w\-\/]*$/.test(path);
-};
-
-// 获取页面数据的异步函数
-const fetchPageData = async (path: string) => {
-  try {
-    if (!isValidPath(path)) {
-      throw new Error("Invalid path");
-    }
-    const result = await queryCollection("content").path(path).first();
-    if (!result) {
-      throw new Error("Page not found");
-    }
-    page.value = result;
-  } catch (err: any) {
-    error.value = err.message || "Failed to load page";
-    console.error(`Error fetching page data for path "${path}":`, err);
-  } finally {
-    loading.value = false;
-  }
-};
-
-// 初始化数据加载
-await fetchPageData(route.path);
-
-// 页面不存在时跳转至 404
-if (!page.value && !error.value) {
-  await navigateTo("/404", { redirectCode: 404 });
-}
+<script setup>
+import { Icon } from "@iconify/vue";
+// 可选：设置状态码
+useHead({ title: "404 页面不存在" });
 </script>
 
-<template>
-  <div v-if="loading">Loading...</div>
-  <div v-else-if="error">{{ error }}</div>
-  <ContentRenderer v-else-if="page" :value="page" />
-</template>
+<style scoped></style>

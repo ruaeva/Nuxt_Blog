@@ -2,32 +2,10 @@
   import ScrollView from '~/components/widget/ScrollView.vue';
 
 
-  const tableData = [
-    {
-      date: '2016-05-02',
-      name: '王小虎',
-      address: '上海市普陀区金沙江路 1518 弄'
-    },
-    {
-      date: '2016-05-04',
-      name: '王小虎',
-      address: '上海市普陀区金沙江路 1517 弄'
-    },
-    {
-      date: '2016-05-01',
-      name: '王小虎',
-      address: '上海市普陀区金沙江路 1519 弄'
-    },
-    {
-      date: '2016-05-03',
-      name: '王小虎',
-      address: '上海市普陀区金沙江路 1516 弄'
-    }
-  ]
 </script>
 
 <template>
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col lg:gap-4 gap-2">
     <div class="card-content text-content">
       <h1 class="title-base font-bold mb-4 before-border-l relative">关于本站</h1>
       <p class="mb-2 b">
@@ -46,55 +24,11 @@
  
 
     <div class="card-content text-content">
-      <h1 class="title-base font-bold before-border-l relative">
+      <h1 class="title-base  relative">
         我的简历
       </h1>
-      <!-- <div class=" overflow-x-auto  border-gray-100">
-        <table class="border-collapse border-2 border-gray-100 ...">
-          <tr>
-            <th class="border-2 border-gray-300 py-2 px-4">学校</th>
-            <th class="border-2 border-gray-300 py-2 px-4">
-              天津现代职业技术学院
-            </th>
-            <th class="border-2 border-gray-300 py-2 px-4">学历</th>
-            <th class="border-2 border-gray-300 py-2 px-4">专科</th>
-          </tr>
-
-          <tr>
-            <th class="border-2 border-gray-300 py-2 px-4">专业</th>
-            <th class="border-2 border-gray-300 py-2 px-4">软件技术</th>
-            <th class="border-2 border-gray-300 py-2 px-4">政治面貌</th>
-            <th class="border-2 border-gray-300 py-2 px-4">群众</th>
-          </tr>
-          <tr>
-            <th class="border-2 border-gray-300 py-2 px-4">个人方向</th>
-            <th class="border-2 border-gray-300 py-2 px-4">前端</th>
-            <th class="border-2 border-gray-300 py-2 px-4">Github</th>
-            <th class="border-2 border-gray-300 py-2 px-4">
-              https://github.com/ruaeva
-            </th>
-          </tr>
-          <tr>
-            <th class="border-2 border-gray-300 py-2 px-4">邮箱</th>
-            <th class="border-2 border-gray-300 py-2 px-4">
-              7uuyucu@gmail.com
-            </th>
-            <th class="border-2 border-gray-300 py-2 px-4">-----------</th>
-            <th class="border-2 border-gray-300 py-2 px-4">-----------</th>
-          </tr>
-        </table>
-      </div> -->
-
-   <el-table :data="tableData" style="width: 100%">
-    <el-table-column prop="date"  width="180" />
-    <el-table-column prop="name"  width="180" />
-    <el-table-column prop="address"  />
-    <el-table-column prop="address"  />
-  </el-table>
  
 
-     
-      
       <div class="">
         <!--  
         <h1 class="title-sub">📚 主修课程</h1>
@@ -118,7 +52,7 @@
           <li>了解SpringBoot+MyBatis Plus的基础应用，能按照RESTful规范独立完成简单的CRUD接口设计和开发</li>
           <li>熟悉Linux操作系统基本命令使用及其相关配置。</li>
           <li>掌握 SQL 数据库基本操作，具备数据查询、管理与维护能力，可配合前后端协同完成数据交互功能。</li>
-          <li>熟练掌握 Webpack、Vite 等前端构建工具，理解前端工程化体系，可独立编写构建配置并完成项目打包优化。</li>
+          <li>熟练使用 Webpack、Vite 等前端构建工具，理解前端工程化体系，可独立编写构建配置并完成项目打包优化。</li>
           <li>熟练使用 Git 及 Gitee 等版本控制工具，遵循团队协作流程与代码规范（如 ESLint），保障代码质量与项目可维护性。</li>
           <li>了解浏览器渲染机制、重绘与回流原理，掌握常见前端性能优化策略，提升页面加载速度与用户体验。关注用户体验与交互设计，能够
 结合用户需求优化操作流程，提升产品易用性与可用性。

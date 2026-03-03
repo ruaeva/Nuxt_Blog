@@ -20,10 +20,10 @@ export default defineNuxtConfig({
             ],
             link: [
                 {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
-            ]
-        }
+            ],
+        
+        },
     },
-    loading:'@/components/Loading.vue',
     // 内容配置
     content: {},
     // 服务端运行端口
